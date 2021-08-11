@@ -1,0 +1,146 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#section1{
+    height: 100vh;
+    width:100%;
+    background-image: url('./img/mapback.jpg');
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+}
+
+#navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem;
+    width:100%;
+    height: 7vh;
+    background-color: #0005;
+}
+
+#section2div1 h1{
+    font-size: 2rem;
+    color: white;
+}
+
+#section2div2 ul{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 60rem;
+}
+
+#section2div2 ul li{
+    list-style: none;
+}
+
+#section2div2 ul li a{
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-shadow:1px 1px black;
+}
+#section2div2 ul li a:hover{
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(128, 13, 13);
+    transition: 1s;
+    border-bottom: 2px solid steelblue;
+}
+
+#button{
+    display: none;
+}
+
+
+
+/* responsive part of navbar ................................... */
+
+#button{
+    width:4rem;
+}
+
+#button i{
+    font-size: 1.5rem;
+    color:white;
+    background-color: black;
+}
+
+@media only screen and (max-width:1300px){
+
+    #section2div1 h1{
+        font-size: 1.5rem;
+        color: white;
+    }
+    
+    #section2div2 ul li a{
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: white;
+        text-shadow:1px 1px black;
+    }
+
+    #section2div2 ul{
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly;
+        width: 60rem;
+    }
+}
+
+
+@media only screen and (max-width:1180px){
+
+    #section2div1 h1{
+        font-size: 1rem;
+        color: white;
+    }
+
+    #section2div2 ul{
+        display: none;
+        top: 7vh;
+    }
+
+    #button{
+        display: inline-block;
+        margin-left: 50%;
+        
+    }
+    
+    
+    
+}
+
+
+
+#mapdiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+}
+
+#mapdiv i{
+    width: 80%;
+    height: 70vh;
+}
+
+/* responsive part of map ...... */
+
+@media only screen and (max-width:1180px){
+    #mapdiv iframe{
+        width: 75%;
+        height: 70vh;
+    }
+    
+}
+
